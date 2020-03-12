@@ -1,0 +1,110 @@
+/* #ff9f43 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 10px;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/hero-image.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  width: 100%;
+}
+
+.logo-box {
+  position: absolute;
+  top: 30px;
+  left: 45px;
+}
+
+.logo {
+  height: 45px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.hero-text-main {
+  display: block;
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 20px;
+}
+
+.hero-text-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 15px;
+}
+
+.search-form {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
+}
+
+.search-form .form-control {
+  display: inline-block;
+  margin: 20px 10px;
+}
+
+.search-form .form-control input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  color: #333;
+  border: 1px solid #f1c40f;
+  font-size: 20px;
+}
+
+.search-form .form-control .btn {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  width: 200px;
+  background: #f1c40f;
+  border: 1px #f1c40f solid;
+  font-weight: 300;
+  font-size: 20px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.search-form .form-control .btn:hover {
+  cursor: pointer;
+  color: rgb(235, 231, 231);
+  background-color: #e2b70d;
+}
+
+.search-form .form-control .btn .arrow {
+  transition: transform 0.2s;
+}
+
+.search-form .form-control button .arrow:hover {
+  transform: scaleX(1.5);
+}
