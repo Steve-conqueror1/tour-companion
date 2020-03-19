@@ -1,0 +1,22 @@
+{
+  "name": "tourcompanion",
+  "version": "1.0.0",
+  "description": "\"An app that helps you find a friendly tour guide\"",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Steve-conqueror1/tour-companion.git"
+  },
+  "author": "Stephen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Steve-conqueror1/tour-companion/issues"
+  },
+  "homepage": "https://github.com/Steve-conqueror1/tour-companion#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

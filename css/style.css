@@ -4,13 +4,11 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   color: #fff;
@@ -18,28 +16,21 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7;
-  padding: 1rem;
-}
+  padding: 1rem; }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(../img/hero-image.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/hero-image.jpg);
   background-position: center;
   background-size: cover;
   height: 80vh;
   position: relative;
-  width: 100%;
-}
-
-.header__logo-box {
-  position: absolute;
-  top: 3rem;
-  left: 4.5rem;
-}
-
-.header__logo {
-  height: 4.5rem;
-}
+  width: 100%; }
+  .header__logo-box {
+    position: absolute;
+    top: 3rem;
+    left: 4.5rem; }
+  .header__logo {
+    height: 4.5rem; }
 
 .hero-text {
   position: absolute;
@@ -49,22 +40,17 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-.hero-text--main {
-  display: block;
-  font-size: 4.5rem;
-  font-weight: 400;
-  letter-spacing: 2rem;
-}
-
-.hero-text--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.5rem;
-}
+  margin-bottom: 4rem; }
+  .hero-text--main {
+    display: block;
+    font-size: 4.5rem;
+    font-weight: 400;
+    letter-spacing: 2rem; }
+  .hero-text--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.5rem; }
 
 .search-form {
   position: absolute;
@@ -72,46 +58,33 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  text-align: center;
-}
-
-.search-form__control {
-  display: inline-block;
-  margin: 2rem 1rem;
-}
-
-.search-form__control input[type="text"] {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  outline: none;
-  color: #333;
-  border: 0.1rem solid #f1c40f;
-  font-size: 2rem;
-}
-
-.search-form__control .btn {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  outline: none;
-  color: #fff;
-  width: 20rem;
-  background: #f1c40f;
-  border: 0.1rem #f1c40f solid;
-  font-weight: 300;
-  font-size: 2rem;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-.search-form__control .btn:hover {
-  cursor: pointer;
-  color: rgb(235, 231, 231);
-  background-color: #e2b70d;
-}
-
-.search-form__control .btn .btn--arrow {
-  transition: transform 0.2s;
-}
-
-.search-form__control button .btn--arrow:hover {
-  transform: scaleX(1.5);
-}
+  text-align: center; }
+  .search-form__control {
+    display: inline-block;
+    margin: 2rem 1rem; }
+    .search-form__control input[type="text"] {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      outline: none;
+      color: #333;
+      border: 0.1rem solid #f1c40f;
+      font-size: 2rem; }
+    .search-form__control .btn {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      outline: none;
+      color: #fff;
+      width: 20rem;
+      background: #f1c40f;
+      border: 0.1rem #f1c40f solid;
+      font-weight: 300;
+      font-size: 2rem;
+      transition: background-color 0.2s, color 0.2s; }
+      .search-form__control .btn:hover {
+        cursor: pointer;
+        color: #ebe7e7;
+        background-color: #e2b70d; }
+      .search-form__control .btn--arrow {
+        transition: transform 0.2s; }
+        .search-form__control .btn--arrow:hover {
+          transform: scaleX(1.5); }
