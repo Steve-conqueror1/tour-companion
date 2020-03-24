@@ -1,0 +1,118 @@
+.navigation{
+    overflow: hidden;
+    transition: all .4s;
+       
+    &__menu{
+        display: inline-block;
+        width: 10rem;
+        height: 10rem;
+        background-color:   rgba($color-black, .1);
+        position: fixed;
+        right: 6rem;
+        top: 6rem;
+        z-index: 4000;
+        border-radius: 50%;
+        padding: .2rem;
+
+        &:hover {
+            cursor: pointer;          
+        }
+    }
+
+    &__bar{    
+        display: block;
+        background-color: $color-primary;
+        height: .5rem;
+        width: 6rem;
+        z-index: 4001;    
+        transform: translateX(-50%);
+        position: absolute;   
+        left: 50%; 
+        transition: all .4s;
+      
+
+        &:nth-child(1){
+            top: 30%;   
+        }     
+        &:nth-child(2){
+            top: 50%;  
+        }     
+        &:nth-child(3){
+            bottom: 30%;
+        }     
+    }
+
+    &__box{
+        background-color: rgba(12, 11, 11, 0.938);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 96%;
+        height: 90vh;
+        z-index: 3000;
+        overflow: hidden;
+        margin-left: 2%;
+        margin-top: 1rem;
+
+        transition: all .4s;
+        .navigation__list{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            list-style: none;         
+            transform: translate(-50%, -50%);
+
+            .navigation__item{
+                padding: 1rem 5rem;
+                text-align: center;               
+                .navigation__link{
+                    text-decoration: none;
+                    font-size: 2rem;
+                    color: $color-primary;
+                    text-transform: uppercase;
+                    letter-spacing: .3rem;
+                    // text-align: center;
+                    transition: all .5s;
+                    margin-left: 40%;
+                    transform: translateX(-50%);
+                }
+
+                &:hover  .navigation__link{
+                    color: $color-white;
+                    padding: 1.5rem 9rem;
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }
+} 
+
+.navigation__bar-clicked{
+    display: block;
+    background-color: $color-white;
+    height: .5rem;
+    width: 6rem;
+    z-index: 4001; 
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    transition: all .4s;
+    &:nth-child(1){
+        transform: rotate(45deg);
+    }
+    &:nth-child(2){
+       display: none;
+    }
+    &:nth-child(3){
+        transform: rotate(-45deg);
+    }
+}
+
+.hide-nav{
+    display: none;
+    z-index: -2;
+    transition: all .4s ease-in;
+
+}
+
