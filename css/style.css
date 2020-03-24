@@ -328,3 +328,85 @@ body {
   .section-about--content {
     width: 90%;
     margin: 0 auto; }
+
+.section-steps {
+  background-color: #fff;
+  padding: 5rem 0;
+  overflow: hidden; }
+  .section-steps__content {
+    width: 90%;
+    margin: 0 auto; }
+  .section-steps__header {
+    display: inline-block;
+    text-align: center;
+    width: 100%; }
+  .section-steps__heading {
+    text-align: center;
+    color: #f1c40f;
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: .4rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5rem; }
+  .section-steps-form {
+    text-align: center;
+    height: 100%; }
+    .section-steps-form .section-steps--col {
+      height: 35rem;
+      background: linear-gradient(white, white);
+      box-shadow: 0 0.5rem 1rem #faf9f9; }
+      .section-steps-form .section-steps--col .steps-icon {
+        display: inline-block;
+        color: #f1c40f;
+        font-size: 5rem;
+        padding: 5rem 0 2rem 0; }
+      .section-steps-form .section-steps--col p {
+        color: #333;
+        font-size: 2rem;
+        margin-bottom: 5rem; }
+  .section-steps__search-form-control {
+    border: 1px solid #f1c40f;
+    width: 70%;
+    margin-left: 15%;
+    position: relative;
+    margin-top: 8rem; }
+    .section-steps__search-form-control i {
+      display: inline-block;
+      color: #f1c40f;
+      margin-top: -2rem;
+      transform: scale(1.4);
+      padding: .5rem;
+      position: absolute;
+      top: 3rem;
+      left: 2px; }
+    .section-steps__search-form-control .section-steps__input {
+      display: inline-block;
+      width: 80%;
+      height: 110%;
+      padding: 1rem 1rem;
+      border: none;
+      outline: none;
+      color: #333;
+      font-size: 2rem; }
+  .section-steps__input-language {
+    display: inline-block;
+    width: 70%;
+    height: 110%;
+    padding: 1rem 1rem;
+    border: 1px solid #f1c40f;
+    outline: none;
+    color: #333;
+    font-size: 2rem; }
+  .section-steps__button {
+    background: #fff;
+    padding: 1.5rem 5rem;
+    outline: none;
+    border: 1px solid #f1c40f;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 700;
+    word-spacing: .2rem;
+    margin-top: 3rem; }
+  .section-steps__button:hover {
+    cursor: pointer; }
