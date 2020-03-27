@@ -194,6 +194,10 @@
         top: 0;
         left: 5rem;
     }
+
+    @include respond(firstbreakpoint){
+        margin-bottom: 10rem;
+    } 
 }
 
 

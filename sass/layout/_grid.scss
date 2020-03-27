@@ -109,7 +109,12 @@
         width: 100%;
         margin-bottom: 8rem;
         font-size: 3rem;
-       } 
+    } 
+
+    @include respond(firstbreakpoint){
+        margin-bottom: 10rem;
+    } 
+
 }
 
 
