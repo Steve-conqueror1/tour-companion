@@ -10,9 +10,11 @@
 html {
   font-size: 62.5%;  //1rem = 10px 
 
-  // @include respond(phone){
-  //   font-size: 40%;
-  // }
+  @include respond(firstbreakpoint){
+    font-size: 40%;
+  }
+
+
   // @include respond(tablet-landscape){
   //   font-size: 66.25%;
   // }
