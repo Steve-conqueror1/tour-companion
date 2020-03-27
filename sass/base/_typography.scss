@@ -61,7 +61,8 @@ body {
 
 
       @include respond(firstbreakpoint){
-        letter-spacing: 1.5rem;
+        letter-spacing: 1.2rem;
+        line-height: 90%;
       }
   
     }

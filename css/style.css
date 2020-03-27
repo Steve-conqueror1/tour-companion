@@ -55,7 +55,8 @@ body {
     letter-spacing: 2rem; }
     @media (max-width: 37.5em) {
       .hero-text--main {
-        letter-spacing: 1.5rem; } }
+        letter-spacing: 1.2rem;
+        line-height: 90%; } }
   .hero-text--sub {
     display: block;
     font-size: 2rem;
