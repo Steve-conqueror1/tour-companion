@@ -47,6 +47,11 @@ body {
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 4rem;
+
+    @include respond(firstbreakpoint){
+      margin-top: 6rem;
+      // margin-bottom: 4rem;
+    }
    
     &--main {
       display: block;
@@ -54,6 +59,10 @@ body {
       font-weight: 400;
       letter-spacing: 2rem;
 
+
+      @include respond(firstbreakpoint){
+        letter-spacing: 1.5rem;
+      }
   
     }
   
