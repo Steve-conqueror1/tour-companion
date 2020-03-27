@@ -26,8 +26,8 @@ body {
       left: 4.5rem;
 
       @include respond(firstbreakpoint){
-        top: 3.5rem;
-        left: 4.2rem;
+        top: 7.8rem;
+        left: 4rem;
       }
 
 
@@ -37,7 +37,7 @@ body {
       height: 4.5rem;
 
       @include respond(firstbreakpoint){
-       height: 5rem;
+       height: 7rem;
       }
 
     }
@@ -54,7 +54,8 @@ body {
     margin-bottom: 4rem;
 
     @include respond(firstbreakpoint){
-      margin-top: 6rem;
+      margin-top: 8rem;
+      margin-bottom: 1rem;
     }
    
     &--main {
@@ -65,8 +66,8 @@ body {
 
 
       @include respond(firstbreakpoint){
-        letter-spacing: 1.2rem;
-        line-height: 80%;
+        letter-spacing: 1rem;
+        line-height: 7.5rem;
       }
   
     }
@@ -78,7 +79,9 @@ body {
       letter-spacing: 1.5rem;
 
       @include respond(firstbreakpoint){
-        letter-spacing: 1rem;        
+        letter-spacing: .9rem;     
+        font-size: 3rem;   
+        color: $color-primary;
       }    
     }
   }
@@ -90,10 +93,19 @@ body {
     transform: translateX(-50%);
     width: 90%;
     text-align: center;
+
+    @include respond(firstbreakpoint){
+      bottom: 8rem;
+    } 
   
     &__control{    
         display: inline-block;
         margin: 2rem 1rem;
+        
+      @include respond(firstbreakpoint){
+        display: block;
+        width: 100%;
+      } 
   
         input[type="text"] {
           padding: 1rem;
@@ -102,6 +114,13 @@ body {
           color: $color-grey;
           border: 0.1rem solid $color-primary;
           font-size: 2rem;
+
+          @include respond(firstbreakpoint){
+            display: block;
+            width: 100%;
+            padding: 2rem;
+            font-size: 3.5rem;
+          } 
         }
   
           .btn {
@@ -115,6 +134,13 @@ body {
             font-weight: 300;
             font-size: 2rem;
             transition: background-color 0.2s, color 0.2s;
+
+            @include respond(firstbreakpoint){
+              display: block;
+              width: 100%;
+              padding: 2rem;
+              font-size: 3.5rem;
+            } 
       
             &:hover {
               cursor: pointer;

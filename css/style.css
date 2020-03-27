@@ -35,13 +35,13 @@ body {
     left: 4.5rem; }
     @media (max-width: 37.5em) {
       .header__logo-box {
-        top: 3.5rem;
-        left: 4.2rem; } }
+        top: 7.8rem;
+        left: 4rem; } }
   .header__logo {
     height: 4.5rem; }
     @media (max-width: 37.5em) {
       .header__logo {
-        height: 5rem; } }
+        height: 7rem; } }
 
 .hero-text {
   position: absolute;
@@ -54,7 +54,8 @@ body {
   margin-bottom: 4rem; }
   @media (max-width: 37.5em) {
     .hero-text {
-      margin-top: 6rem; } }
+      margin-top: 8rem;
+      margin-bottom: 1rem; } }
   .hero-text--main {
     display: block;
     font-size: 4.5rem;
@@ -62,8 +63,8 @@ body {
     letter-spacing: 2rem; }
     @media (max-width: 37.5em) {
       .hero-text--main {
-        letter-spacing: 1.2rem;
-        line-height: 80%; } }
+        letter-spacing: 1rem;
+        line-height: 7.5rem; } }
   .hero-text--sub {
     display: block;
     font-size: 2rem;
@@ -71,7 +72,9 @@ body {
     letter-spacing: 1.5rem; }
     @media (max-width: 37.5em) {
       .hero-text--sub {
-        letter-spacing: 1rem; } }
+        letter-spacing: .9rem;
+        font-size: 3rem;
+        color: #f1c40f; } }
 
 .search-form {
   position: absolute;
@@ -80,9 +83,16 @@ body {
   transform: translateX(-50%);
   width: 90%;
   text-align: center; }
+  @media (max-width: 37.5em) {
+    .search-form {
+      bottom: 8rem; } }
   .search-form__control {
     display: inline-block;
     margin: 2rem 1rem; }
+    @media (max-width: 37.5em) {
+      .search-form__control {
+        display: block;
+        width: 100%; } }
     .search-form__control input[type="text"] {
       padding: 1rem;
       border-radius: 0.5rem;
@@ -90,6 +100,12 @@ body {
       color: #333;
       border: 0.1rem solid #f1c40f;
       font-size: 2rem; }
+      @media (max-width: 37.5em) {
+        .search-form__control input[type="text"] {
+          display: block;
+          width: 100%;
+          padding: 2rem;
+          font-size: 3.5rem; } }
     .search-form__control .btn {
       padding: 1rem;
       border-radius: 0.5rem;
@@ -101,6 +117,12 @@ body {
       font-weight: 300;
       font-size: 2rem;
       transition: background-color 0.2s, color 0.2s; }
+      @media (max-width: 37.5em) {
+        .search-form__control .btn {
+          display: block;
+          width: 100%;
+          padding: 2rem;
+          font-size: 3.5rem; } }
       .search-form__control .btn:hover {
         cursor: pointer;
         color: #ebe7e7;
