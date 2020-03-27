@@ -14,6 +14,11 @@
         border-radius: 50%;
         padding: .2rem;
 
+        // @include respond(tablet-portrait){
+        //     width: 16rem;
+        //     height: 16rem;
+        // }
+
         &:hover {
             cursor: pointer;          
         }
@@ -29,6 +34,11 @@
         position: absolute;   
         left: 50%; 
         transition: all .4s;
+
+        // @include respond(tablet-portrait){
+        //     height: .8rem;
+        //     width: 8rem;
+        // }
       
 
         &:nth-child(1){
@@ -53,6 +63,7 @@
         overflow: hidden;
         margin-left: 2%;
         margin-top: 1rem;
+
 
         transition: all .4s;
         .navigation__list{

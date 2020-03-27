@@ -9,15 +9,15 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 1rem; }
 
 body {
   color: #fff;
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.7;
-  padding: 1rem; }
+  line-height: 1.7; }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/hero-image.jpg);
@@ -55,7 +55,7 @@ body {
 
 .search-form {
   position: absolute;
-  bottom: 50px;
+  bottom: 5rem;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -330,7 +330,7 @@ body {
     margin: 0 auto; }
 
 .section-steps {
-  background-color: #fff;
+  background-color: rgba(204, 204, 204, 0.5);
   padding: 5rem 0;
   overflow: hidden; }
   .section-steps__content {
@@ -354,7 +354,7 @@ body {
     height: 100%; }
     .section-steps-form .section-steps--col {
       height: 35rem;
-      background: linear-gradient(white, white);
+      background: linear-gradient(#f8f8f8, white);
       box-shadow: 0 0.5rem 1rem #faf9f9; }
       .section-steps-form .section-steps--col .steps-icon {
         display: inline-block;
@@ -370,7 +370,8 @@ body {
     width: 70%;
     margin-left: 15%;
     position: relative;
-    margin-top: 8rem; }
+    margin-top: 8rem;
+    border-radius: .5rem; }
     .section-steps__search-form-control i {
       display: inline-block;
       color: #f1c40f;
@@ -397,16 +398,64 @@ body {
     border: 1px solid #f1c40f;
     outline: none;
     color: #333;
-    font-size: 2rem; }
+    font-size: 2rem;
+    border-radius: .5rem; }
   .section-steps__button {
     background: #fff;
     padding: 1.5rem 5rem;
     outline: none;
     border: 1px solid #f1c40f;
-    color: #333;
+    color: #f1c40f;
     font-size: 2rem;
     font-weight: 700;
     word-spacing: .2rem;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    border-radius: .5rem; }
   .section-steps__button:hover {
     cursor: pointer; }
+
+.section-reviews .positive-reviews {
+  color: #f1c40f;
+  font-size: 3rem; }
+
+.section-reviews__content {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5rem; }
+  .section-reviews__content .row {
+    margin-bottom: 5rem; }
+
+.section-reviews .review-paragraph {
+  color: #333;
+  font-size: 1.8rem; }
+
+.section-reviews__img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%; }
+
+.section-reviews .col-1-of-2 {
+  position: relative; }
+
+.section-reviews span {
+  color: #f1c40f;
+  font-size: 1.8rem;
+  font-weight: 700;
+  position: absolute;
+  top: 3rem;
+  left: 12rem; }
+
+.section-reviews .user-review {
+  color: #333;
+  position: absolute;
+  display: inline-block;
+  top: 6rem;
+  left: 12rem;
+  padding: 1rem;
+  border: 1px solid #f1c40f;
+  background-color: rgba(241, 243, 246, 0.1); }
+
+.section-reviews .rating {
+  position: absolute;
+  top: 0;
+  left: 5rem; }

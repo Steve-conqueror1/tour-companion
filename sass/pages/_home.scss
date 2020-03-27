@@ -10,7 +10,7 @@
 }
 
 .section-steps{
-    background-color: $color-white;
+    background-color: rgba($color-grey-light, .5);
     padding: 5rem 0;   
     overflow: hidden;
 
@@ -42,7 +42,7 @@
        .section-steps--col{
         //    margin-bottom: 3px;
            height: 35rem;
-           background:linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+           background:linear-gradient(rgb(248, 248, 248), rgb(255, 255, 255));
            box-shadow: 0 .5rem 1rem rgb(250, 249, 249);
            
            .steps-icon{
@@ -71,6 +71,7 @@
         margin-left: 15%;
         position: relative;
         margin-top: 8rem;
+        border-radius: .5rem;
 
         i{
            display: inline-block;
@@ -96,6 +97,7 @@
             outline: none;
             color: $color-grey;
             font-size: 2rem;
+          
             // margin-top: 4rem;
         
         }
@@ -112,6 +114,7 @@
          outline: none;
          color: $color-grey;
          font-size: 2rem;
+         border-radius: .5rem;
      
     }
 
@@ -120,18 +123,77 @@
         padding: 1.5rem 5rem;
         outline: none;
         border: 1px solid $color-primary;
-        color: $color-grey;
+        color: $color-primary;
         font-size: 2rem;
         font-weight: 700;
         word-spacing: .2rem;
         margin-top: 3rem;
+        border-radius: .5rem;
     }
     &__button:hover{
        cursor: pointer;
     }
 
+}
 
+.section-reviews{
 
+    .positive-reviews{
+        color: $color-primary;
+        font-size: 3rem;
+
+    }
+    &__content{
+        width: 90%;;
+        margin: 0 auto;
+        padding-top: 5rem;
+
+        .row{
+            margin-bottom: 5rem;
+        }
+    }
+
+    .review-paragraph{
+        color: $color-grey;
+        font-size: 1.8rem;
+    }
+
+    &__img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+    }
+
+    .col-1-of-2{
+        position: relative;
+        // padding: 2rem;
+    }
+
+    span{
+        color: $color-primary;
+        font-size: 1.8rem;
+        font-weight: 700;
+        position: absolute;
+        top: 3rem;
+        left: 12rem;
+    }
+
+    .user-review{
+     color: $color-grey;
+     position: absolute;
+     display: inline-block;
+     top: 6rem;
+     left: 12rem;
+     padding: 1rem;
+     border:1px solid $color-primary;
+     background-color: rgba($color-black-light, .1);
+    }
+
+    .rating{
+        position: absolute;
+        top: 0;
+        left: 5rem;
+    }
 }
 
 
