@@ -143,6 +143,7 @@
         font-size: 3rem;
 
     }
+
     &__content{
         width: 90%;;
         margin: 0 auto;
@@ -156,6 +157,10 @@
     .review-paragraph{
         color: $color-grey;
         font-size: 1.8rem;
+
+        @include respond(firstbreakpoint){
+            margin-bottom: .5rem;
+        } 
     }
 
     &__img{
@@ -166,6 +171,10 @@
 
     .col-1-of-2{
         position: relative;
+
+        @include respond(firstbreakpoint){
+         margin-bottom: 16rem;
+        } 
         // padding: 2rem;
     }
 

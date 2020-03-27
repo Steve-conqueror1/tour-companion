@@ -14,6 +14,10 @@
         height: auto;
        margin: 5rem 50%;
        transform: translateX(-50%);
+
+       @include respond(firstbreakpoint){
+        width: 10rem;
+    } 
     }
 
     &__link-box{
@@ -48,6 +52,11 @@
     &__link:visited{
         text-decoration: none;
         color: inherit;
+        @include respond(firstbreakpoint){
+            // margin-bottom: 10rem;
+            margin-right: 2rem;
+        } 
+        
     }
 
     &__text{
@@ -71,5 +80,13 @@
             }
            
         }
+
+        @include respond(firstbreakpoint){
+            margin-bottom: 2rem;
+        } 
     }
+
+    @include respond(firstbreakpoint){
+        margin-bottom: 2rem;
+    } 
 }
