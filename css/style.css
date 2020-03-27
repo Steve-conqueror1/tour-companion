@@ -55,7 +55,7 @@ body {
   @media (max-width: 37.5em) {
     .hero-text {
       margin-top: 4rem;
-      margin-bottom: 4rem;
+      margin-bottom: 6rem;
       width: 100%; } }
   .hero-text--main {
     display: block;
