@@ -55,7 +55,7 @@ body {
 
     @include respond(firstbreakpoint){
       margin-top: 4rem;
-      margin-bottom: 6rem;
+      margin-bottom: 10rem;
       width: 100%;
     }
    
@@ -96,6 +96,7 @@ body {
     text-align: center;
 
     @include respond(firstbreakpoint){
+      margin-top: 6rem;
       bottom: 6rem;
     } 
   

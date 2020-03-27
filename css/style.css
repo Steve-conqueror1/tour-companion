@@ -55,7 +55,7 @@ body {
   @media (max-width: 37.5em) {
     .hero-text {
       margin-top: 4rem;
-      margin-bottom: 6rem;
+      margin-bottom: 10rem;
       width: 100%; } }
   .hero-text--main {
     display: block;
@@ -86,6 +86,7 @@ body {
   text-align: center; }
   @media (max-width: 37.5em) {
     .search-form {
+      margin-top: 6rem;
       bottom: 6rem; } }
   .search-form__control {
     display: inline-block;
