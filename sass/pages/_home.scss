@@ -152,11 +152,16 @@
         @include respond(seconndbreakpoint){
            width: 100%;
            padding-top: 1rem;
+           margin-bottom: 8rem;
         } 
 
         .row{
-            margin-bottom: 5rem;
-        }
+            margin-bottom: 8rem;
+
+            @include respond(seconndbreakpoint){       
+                margin-bottom: 10rem;
+             }
+        }        
     }
 
     .review-paragraph{
@@ -211,21 +216,21 @@
      border:1px solid $color-primary;
      background-color: rgba($color-black-light, .1);
 
-     @include clearfix;
+       //  @include clearfix;
 
      span{
          display: block;
          margin-top: 5rem;
          margin-left: 18rem;
+
+         @include respond(secondbreakpoint){
+            // float: right;
+            
+            margin-top: -8.5rem;
+            margin-left: .4rem;
+           }     
      }
-
      
-
-     @include respond(secondbreakpoint){
-        float: right;
-        margin-top: -6rem;
-       } 
-
      
     }
 
@@ -233,11 +238,17 @@
         position: absolute;
         top: 0;
         left: 5rem;
+
+        @include respond(secondbreakpoint){
+            margin-bottom: 10rem;
+        } 
     }
 
     @include respond(firstbreakpoint){
         margin-bottom: 10rem;
     } 
+
+    
 }
 
 

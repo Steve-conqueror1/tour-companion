@@ -582,7 +582,7 @@ body {
   margin: 0 auto;
   padding-top: 5rem; }
   .section-reviews__content .row {
-    margin-bottom: 5rem; }
+    margin-bottom: 8rem; }
 
 .section-reviews .review-paragraph {
   color: #333;
@@ -626,23 +626,22 @@ body {
   padding: 1rem;
   border: 1px solid #f1c40f;
   background-color: rgba(241, 243, 246, 0.1); }
-  .section-reviews .user-review:after {
-    content: "";
-    display: table;
-    clear: both; }
   .section-reviews .user-review span {
     display: block;
     margin-top: 5rem;
     margin-left: 18rem; }
-  @media (max-width: 56.25em) {
-    .section-reviews .user-review {
-      float: right;
-      margin-top: -6rem; } }
+    @media (max-width: 56.25em) {
+      .section-reviews .user-review span {
+        margin-top: -8.5rem;
+        margin-left: .4rem; } }
 
 .section-reviews .rating {
   position: absolute;
   top: 0;
   left: 5rem; }
+  @media (max-width: 56.25em) {
+    .section-reviews .rating {
+      margin-bottom: 10rem; } }
 
 @media (max-width: 37.5em) {
   .section-reviews {
