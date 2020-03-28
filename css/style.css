@@ -39,22 +39,22 @@ body {
     position: absolute;
     top: 3rem;
     left: 4.5rem; }
-    @media (max-width: 37.5em) {
-      .header__logo-box {
-        top: 7.8rem;
-        left: 4rem; } }
     @media (max-width: 56.25em) {
       .header__logo-box {
         top: 4rem;
         left: 4rem; } }
+    @media (max-width: 37.5em) {
+      .header__logo-box {
+        top: 7.8rem;
+        left: 4rem; } }
   .header__logo {
     height: 4.5rem; }
-    @media (max-width: 37.5em) {
-      .header__logo {
-        height: 7rem; } }
     @media (max-width: 56.25em) {
       .header__logo {
         height: 7.5rem; } }
+    @media (max-width: 37.5em) {
+      .header__logo {
+        height: 7rem; } }
 
 .hero-text {
   position: absolute;
@@ -65,42 +65,42 @@ body {
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 4rem; }
-  @media (max-width: 37.5em) {
-    .hero-text {
-      margin-top: 6rem;
-      margin-bottom: 10rem;
-      width: 100%; } }
   @media (max-width: 56.25em) {
     .hero-text {
       margin-top: 8.9rem;
       margin-bottom: 16rem;
+      width: 100%; } }
+  @media (max-width: 37.5em) {
+    .hero-text {
+      margin-top: 6rem;
+      margin-bottom: 10rem;
       width: 100%; } }
   .hero-text--main {
     display: block;
     font-size: 4.5rem;
     font-weight: 400;
     letter-spacing: 2rem; }
-    @media (max-width: 37.5em) {
-      .hero-text--main {
-        letter-spacing: 1rem;
-        line-height: 7.5rem; } }
     @media (max-width: 56.25em) {
       .hero-text--main {
         letter-spacing: 1.2rem;
         line-height: 6rem; } }
+    @media (max-width: 37.5em) {
+      .hero-text--main {
+        letter-spacing: 1rem;
+        line-height: 7.5rem; } }
   .hero-text--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.5rem; }
-    @media (max-width: 37.5em) {
-      .hero-text--sub {
-        letter-spacing: .9rem;
-        font-size: 3rem;
-        color: #f1c40f; } }
     @media (max-width: 56.25em) {
       .hero-text--sub {
         letter-spacing: .6rem;
+        font-size: 3rem;
+        color: #f1c40f; } }
+    @media (max-width: 37.5em) {
+      .hero-text--sub {
+        letter-spacing: .9rem;
         font-size: 3rem;
         color: #f1c40f; } }
 
@@ -111,26 +111,26 @@ body {
   transform: translateX(-50%);
   width: 90%;
   text-align: center; }
-  @media (max-width: 37.5em) {
-    .search-form {
-      margin-top: 6rem;
-      bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .search-form {
       margin-top: 16rem;
       bottom: 2rem; } }
+  @media (max-width: 37.5em) {
+    .search-form {
+      margin-top: 6rem;
+      bottom: 6rem; } }
   .search-form__control {
     display: inline-block;
     margin: 2rem 1rem; }
-    @media (max-width: 37.5em) {
-      .search-form__control {
-        display: block;
-        width: 100%; } }
     @media (max-width: 56.25em) {
       .search-form__control {
         display: inline-block;
         width: 30%;
         float: left; } }
+    @media (max-width: 37.5em) {
+      .search-form__control {
+        display: block;
+        width: 100%; } }
     .search-form__control input[type="text"] {
       padding: 1rem;
       border-radius: 0.5rem;
@@ -138,6 +138,12 @@ body {
       color: #333;
       border: 0.1rem solid #f1c40f;
       font-size: 2rem; }
+      @media (max-width: 56.25em) {
+        .search-form__control input[type="text"] {
+          display: inline-block;
+          width: 98%;
+          float: left;
+          margin-right: 0; } }
       @media (max-width: 37.5em) {
         .search-form__control input[type="text"] {
           display: block;
@@ -145,12 +151,6 @@ body {
           padding: 2rem;
           font-size: 3.5rem;
           margin-bottom: 3rem; } }
-      @media (max-width: 56.25em) {
-        .search-form__control input[type="text"] {
-          display: inline-block;
-          width: 98%;
-          float: left;
-          margin-right: 0; } }
     .search-form__control .btn {
       padding: 1rem;
       border-radius: 0.5rem;

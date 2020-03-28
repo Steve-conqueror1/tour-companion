@@ -25,15 +25,15 @@ body {
       top: 3rem;
       left: 4.5rem;
 
+      @include respond(secondbreakpoint){
+        top: 4rem;
+        left: 4rem;
+      }
       @include respond(firstbreakpoint){
         top: 7.8rem;
         left: 4rem;
       }
 
-      @include respond(secondbreakpoint){
-        top: 4rem;
-        left: 4rem;
-      }
 
 
     }
@@ -41,13 +41,14 @@ body {
     &__logo {
       height: 4.5rem;
 
+      @include respond(secondbreakpoint){
+       height: 7.5rem;
+      }
+
       @include respond(firstbreakpoint){
        height: 7rem;
       }
 
-      @include respond(secondbreakpoint){
-       height: 7.5rem;
-      }
 
     }
   }
@@ -62,17 +63,18 @@ body {
     margin-top: 4rem;
     margin-bottom: 4rem;
 
+    @include respond(secondbreakpoint){
+      margin-top: 8.9rem;
+      margin-bottom: 16rem;
+      width: 100%;
+    }
+
     @include respond(firstbreakpoint){
       margin-top: 6rem;
       margin-bottom: 10rem;
       width: 100%;
     }
 
-    @include respond(secondbreakpoint){
-      margin-top: 8.9rem;
-      margin-bottom: 16rem;
-      width: 100%;
-    }
    
     &--main {
       display: block;
@@ -80,16 +82,16 @@ body {
       font-weight: 400;
       letter-spacing: 2rem;
 
+      @include respond(secondbreakpoint){
+        letter-spacing: 1.2rem;
+        line-height: 6rem;
+      }
 
       @include respond(firstbreakpoint){
         letter-spacing: 1rem;
         line-height: 7.5rem;
       }
 
-      @include respond(secondbreakpoint){
-        letter-spacing: 1.2rem;
-        line-height: 6rem;
-      }
   
     }
   
@@ -99,17 +101,19 @@ body {
       font-weight: 700;
       letter-spacing: 1.5rem;
 
-      @include respond(firstbreakpoint){
-        letter-spacing: .9rem;     
-        font-size: 3rem;   
-        color: $color-primary;
-      }    
 
       @include respond(secondbreakpoint){
         letter-spacing: .6rem;     
         font-size: 3rem;   
         color: $color-primary;
       }    
+
+      @include respond(firstbreakpoint){
+        letter-spacing: .9rem;     
+        font-size: 3rem;   
+        color: $color-primary;
+      }    
+
     }
   }
   
@@ -121,19 +125,28 @@ body {
     width: 90%;
     text-align: center;
 
+    @include respond(secondbreakpoint){
+      margin-top: 16rem;
+      bottom: 2rem;
+    } 
     @include respond(firstbreakpoint){
       margin-top: 6rem;
       bottom: 6rem;
     } 
 
-    @include respond(secondbreakpoint){
-      margin-top: 16rem;
-      bottom: 2rem;
-    } 
   
     &__control{    
         display: inline-block;
         margin: 2rem 1rem;
+
+
+        @include respond(secondbreakpoint){
+          display: inline-block;
+          width: 30%;
+          float: left;
+        } 
+
+
         
       @include respond(firstbreakpoint){
         display: block;
@@ -141,11 +154,6 @@ body {
       } 
 
 
-      @include respond(secondbreakpoint){
-        display: inline-block;
-        width: 30%;
-        float: left;
-      } 
   
         input[type="text"] {
           padding: 1rem;
@@ -155,6 +163,14 @@ body {
           border: 0.1rem solid $color-primary;
           font-size: 2rem;
 
+          @include respond(secondbreakpoint){
+            display: inline-block;
+           width: 98%;
+           float: left;
+           margin-right: 0;
+          } 
+
+          
           @include respond(firstbreakpoint){
             display: block;
             width: 100%;
@@ -164,12 +180,6 @@ body {
           } 
 
 
-          @include respond(secondbreakpoint){
-            display: inline-block;
-           width: 98%;
-           float: left;
-           margin-right: 0;
-          } 
         }
   
           .btn {
